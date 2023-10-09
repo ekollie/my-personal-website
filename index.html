@@ -124,7 +124,7 @@
                     <a href="images/resume.pdf" download class="btn btn2">Download resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -154,7 +154,7 @@
     </script>
     <script>
         
-        var sideMenu = document.getElementById("sideMenu");
+        const sideMenu = document.getElementById("sideMenu");
         
         function openMenu(){
             sideMenu.style.right = "0";
@@ -164,5 +164,16 @@
         }
 
     </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwVdh_BPE2RYMU3WtynKrOHTgzsL2gpbeTjPDFuFMeWESFN2eLDu6z9koBo3S5Wu3Il/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
