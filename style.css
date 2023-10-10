@@ -19,6 +19,7 @@ body{
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -358,4 +359,9 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
