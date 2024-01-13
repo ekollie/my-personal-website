@@ -1,198 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fa95a36a22.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa95a36a22.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="">
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Portfolio Site</p>
-                <h1>Hi, I'm <span>Elijah</span> <br> Kollie</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Portfolio Site</p>
+          <h1>
+            Hi, I'm <span>Elijah</span> <br />
+            Kollie
+          </h1>
         </div>
+      </div>
     </div>
-   
-    <!-- about -->
-    
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/me.jpg" alt="me.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onClick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onClick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Musician</span><br>Self taught pianist and guitarist</li>
-                                <li><span>Place Holder</span><br>blah blah blah</li>
-                                <li><span>Place Holder</span><br>blah blah blah</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2021 - Current</span><br>Production Manager at Nickers International</li>
-                                <li><span>2020 - 2022</span><br>Team Member at ShakeShack</li>
-                                <li><span>2018 - 2021</span><br>Multi-Instrumentalist for a band</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Flatiron School</span><br>Software Engineering</li>
-                                <li><span>CUNY Baruch</span><br>Computer Information Systems major </li>
-                                <li><span>Curtish Highschool </span><br>International Baccalaureate</li>
-                            </ul>
-                        </div>
-                </div>
+    <!-- about -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpg" alt="me.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a dedicated software engineering student in NYC, passionate
+              about crafting innovative solutions and paving my way into the
+              tech industry.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onClick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onClick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onClick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Musician</span><br />Self taught pianist and guitarist
+                </li>
+                <li><span>Front-End</span><br />JavaScript | React.js</li>
+                <li><span>Back-End</span><br />Python | Flask | SQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />Operations Coordinator at
+                  Nickers International
+                </li>
+                <li><span>2020 - 2021</span><br />Team Member at ShakeShack</li>
+                <li>
+                  <span>2018 - 2021</span><br />Multi-Instrumentalist in 80s
+                  rock cover band
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Flatiron School</span><br />Software Engineering</li>
+                <li>
+                  <span>CUNY Baruch</span><br />Computer Information Systems
+                  major
+                </li>
+                <li>
+                  <span>Curtish Highschool </span><br />International
+                  Baccalaureate
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- portfolio -->
-    
+
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/wrench.jpg">
-                    <div class="layer">
-                        <h3>Soon to come</h3>
-                        <p>This space will be used for future software related projects</p>
-                    </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/pomodoro.png" />
+            <a href = https://github.com/ekollie/Pomodoro>
+                <div class="layer" >
+                  <h3>Pomodoro</h3>
+                  <p>
+                    A time management and text editor app that leverages the
+                    Pomodoro Technique to boost productivity. It integrates a
+                    customizable timer with text editing features and performance
+                    tracking.
+                  </p>
                 </div>
-                <div class="work">
-                    <img src="images/wrench.jpg">
-                    <div class="layer">
-                        <h3>Soon to come</h3>
-                        <p>This space will be used for future software related projects</p>
-                    </div>
+            </a>
+          </div>
+          <div class="work">
+            <img src="images/escape.png" />
+            <a href = https://github.com/ekollie/Escape>
+                <div class="layer">
+                  <h3>Escape</h3>
+                  <p>
+                    An immersive puzzle/adventure game played in the CLI,
+                    challenging players with interactive puzzles and dynamic game
+                    environments.
+                  </p>
                 </div>
-                <div class="work">
-                    <img src="images/wrench.jpg">
-                    <div class="layer">
-                        <h3>Soon to come</h3>
-                        <p>This space will be used for future software related projects</p>
-                    </div>
+            </a>
+          </div>
+          <div class="work">
+            <img src="images/life_juggle.png" />
+            <a href = https://github.com/ekollie/Life-Juggle>
+                <div class="layer">
+                  <h3>Life Juggle</h3>
+                  <p>
+                    A game that simulates the balancing act of daily life, built
+                    using Javascript, HTML, and CSS. It offers a fun and interactive
+                    way to understand time management and decision-making.
+                  </p>
                 </div>
-            </div>
-            <a href="#" class="btn">See more</a>
+            </a>
+          </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
     </div>
-    
+
     <!-- contact -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>ekollie324@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+1-(347)-522-4158</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/e_lijak/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/ekollie"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/ekollie"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/resume.pdf" download class="btn btn2">Download resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ekollie324@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+1-(347)-522-4158</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/e_lijak/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/ekollie"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/ekollie"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+            <a href="images/Elijah_Kollie_Resume.docx" download class="btn btn2"
+              >Download resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="footer-message">
-                <p>Personal Website Project | Elijah Kollie | 2023</p>
-            </div>
+      <div class="container">
+        <div class="footer-message">
+          <p>Personal Website Project | Elijah Kollie | 2023</p>
         </div>
+      </div>
     </footer>
 
-    <script>
-
-        const tablinks = document.getElementsByClassName("tab-links");
-        const tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-    <script>
-        
-        const sideMenu = document.getElementById("sideMenu");
-        
-        function openMenu(){
-            sideMenu.style.right = "0";
-        }
-        function closeMenu(){
-            sideMenu.style.right = "-200px";
-        }
-
-    </script>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwVdh_BPE2RYMU3WtynKrOHTgzsL2gpbeTjPDFuFMeWESFN2eLDu6z9koBo3S5Wu3Il/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        const sub = document.querySelector("button, .btn .bt2")
-
-        form.addEventListener('submit', e => {
-            sub.innerHTML = "Submitting"
-            e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                sub.innerHTML = "Submit"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
